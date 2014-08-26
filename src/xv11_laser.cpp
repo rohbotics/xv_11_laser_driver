@@ -106,6 +106,7 @@ namespace xv_11_laser_driver {
       boost::array<uint8_t, 1980> raw_bytes;
       uint8_t good_sets = 0;
       uint32_t motor_speed = 0;
+      rpms=0;
       int index;
       while (!shutting_down_ && !got_scan) {
 	// Wait until first data sync of frame: 0xFA, 0xA0
@@ -136,6 +137,7 @@ namespace xv_11_laser_driver {
 	      if(raw_bytes[i] == 0xFA && raw_bytes[i+1] == (0xA0+i/22)) {//&& CRC check
 		good_sets++;
 		motor_speed += (raw_bytes[i+3] << 8) + raw_bytes[i+2]; //accumulate count for avg. time increment
+       		rpms=(raw_bytes[i+3]<<8|raw_bytes[i+2])/64; 
 		
 		for(uint16_t j = i+4; j < i+20; j=j+4) {
 		  index = (4*i)/22 + (j-4-i)/4;
