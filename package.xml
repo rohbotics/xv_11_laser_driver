@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>xv_11_laser_driver</name>
-  <version>0.2.0</version>
+  <version>0.2.1</version>
   <description>Neato XV-11 Laser Driver. This driver works with the laser when it is removed from the XV-11 Robot as opposed to reading scans from the Neato's USB port.</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag --> 

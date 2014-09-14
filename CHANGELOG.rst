@@ -2,8 +2,8 @@
 Changelog for package xv_11_laser_driver
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.1 (2014-09-14)
+------------------
 * merged Steve Dillo's include file
 * Merge pull request `#1 <https://github.com/rohbotics/xv_11_laser_driver/issues/1>`_ from rohbotics/master
   Merge master and hydro-devel
