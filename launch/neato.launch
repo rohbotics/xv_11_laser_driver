@@ -2,8 +2,8 @@
 <launch>
   <node pkg="xv_11_laser_driver" type="neato_laser_publisher" name="neato_laser_publisher" output="screen">
     <param name="firmware_version"  value="2" />
-    <param name="port"  value="/dev/ttyUSB1" />
+    <param name="port"  value="/dev/ftdi-serial" />
     <param name="baud_rate"  value="115200" />
   </node>
-  <node pkg="tf" type="static_transform_publisher" name="base_to_laser" args="0.23 0.0 0.15 0 0.0 0.0 base_link laser 100"/>
+  <node pkg="tf" type="static_transform_publisher" name="base_to_laser" args="0.0 0.0 0.18 0 0.0 0.0 base_link laser 100"/>
 </launch>

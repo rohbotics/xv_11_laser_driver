@@ -53,7 +53,7 @@ int main(int argc, char **argv)
 
   priv_nh.param("port", port, std::string("/dev/ttyUSB0"));
   priv_nh.param("baud_rate", baud_rate, 115200);
-  priv_nh.param("frame_id", frame_id, std::string("neato_laser"));
+  priv_nh.param("frame_id", frame_id, std::string("laser"));
   priv_nh.param("firmware_version", firmware_number, 1);
 
   boost::asio::io_service io;
