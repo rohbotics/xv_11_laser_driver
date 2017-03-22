@@ -2,8 +2,8 @@
 Changelog for package xv_11_laser_driver
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.3.0 (2017-03-22)
+------------------
 * update default firmware_version to 2
 * Contributors: Rohan Agrawal
 
